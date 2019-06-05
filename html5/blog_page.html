@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SONG BLOG</title>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        /*초기화*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: lightsteelblue;
+        }
+
+        /*메인 블럭*/
+        #header>h1 {
+            font-family: "Do Hyeon";
+            margin-bottom: 5px;
+        }
+
+        #header>h4 {
+            font-weight: normal;
+        }
+
+        #main_wrap {
+            width: 938px;
+
+            padding: 10px;
+
+            background-color: #FFF;
+            border: 1px solid #DDD;
+            border-radius: 3px;
+            box-shadow: 0 3px 3px #DDD;
+
+            margin: 0 auto;
+            /*margin-top: 15px;*/
+            margin: 40px auto;
+            
+        }
+
+        /*header*/
+        #header {
+            padding: 20px;
+        }
+
+        /*네비게이션*/
+        #nav {
+            height: 35px;
+            border-top: 1px solid #DDD;
+            border-bottom: 1px solid #DDD;
+            /*overflow: hidden;*/
+        }
+
+        #menu {
+            float: left;
+        }
+
+        #menu>ul {
+            list-style: none;
+        }
+
+        #menu>ul>li {
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            /*padding: 0 20px;*/
+        }
+        
+        /*메뉴 링크*/
+        #menu>ul>li>a{
+            display: block;
+            line-height: 35px;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        
+        #menu>ul>li:hover{
+            background-color: black;
+            color: aqua;
+        }
+        
+        #menu>ul>li>a:hover{
+            background-color: black;
+            color: aqua;
+        }
+
+        #search {
+            float: right;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        #search>input[type=text] {
+            height: 24px;
+            border-radius: 10px 0 0 10px;
+            border: 1px solid #DDD;
+            vertical-align: middle;
+            padding: 0 10px;
+        }
+
+        #search>input[type=button] {
+            height: 26px;
+            margin-left: -5px;
+            border-radius: 0 12px 12px 0;
+            border: 1px solid #DDD;
+            vertical-align: middle;
+            padding: 0 10px
+        }
+
+        #contents {
+            overflow: hidden;
+            padding: 5px
+        }
+
+        #content {
+            float: left;
+
+            width: 700px;
+            /*height: 900px;*/
+            background-color: aliceblue;
+        }
+
+        #aside {
+            float: right;
+
+            width: 198px;
+            /*background-color: burlywood;*/
+
+            padding: 15px;
+        }
+
+        #aside>ul {
+            list-style: none;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+        
+        
+
+        #aside>ul>li {
+            height: 30px;
+            line-height: 30px;
+        }
+        #content>article{
+            margin: 25px 0;
+            border-bottom: 1px solid #DDD;
+        }
+        
+        #content>article>.img{
+            width: 300px;
+            margin-left: 5px;
+        }
+        
+        #content>article>.date{
+            display: block;
+            padding: 0 5px;
+            margin-bottom: 15px;
+        }
+        
+        #content>article>.title{
+            padding: 20px 5px;
+        }
+        
+        #content>article>p{
+            padding: 5px;
+            line-height: 160%;
+            font-size: 14px;
+        }
+        
+        /*footer*/
+        #footer{
+            /*text-align: center;*/
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div id="main_wrap">
+        <div id="header">
+            <h1>SONG BLOG</h1>
+            <h4>매일 쓰는 일기 </h4>
+        </div>
+        <div id="nav">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+            <div id="search">
+                <input type="text">
+                <input type="button" value="검색">
+            </div>
+        </div>
+        <div id="contents">
+            <div id="content">
+                <article>
+                    <h1 class="title">미니언즈</h1>
+                    <span class="date">2019.06.05 14:55</span>
+                    <img class="img" src="../2019032817312029439_1553761880.jpg">
+                    <p>
+                        기상청은 "남부지방을 지날 것으로 예상되는 저기압의 경로가 좀 더 북쪽으로 지날 경우 중부지방의 강수량이 늘어날 가능성이 있다"고 설명했다.
+
+                        비가 오는 동안 강풍 특보가 발표되는 곳이 많을 것으로 예상된다.
+
+                        특히 6일 밤부터 7일 아침 사이에는 저기압이 몰고 온 온난다습한 공기가 강한 남풍을 따라 유입되면서 국지적으로 돌풍과 천둥·번개를 동반한 시간당 30㎜ 안팎의 강한 비가 내릴 것으로 보인다.
+                    </p>
+                    <p>
+                        제주도와 남부지방을 중심으로 최대 풍속은 시속 36∼58㎞(초속 10∼16ｍ), 최대 순간 풍속은 시속 72㎞(초속 20ｍ)에 달할 것으로 기상청은 예상했다.
+
+                        그 밖의 전국에도 최대 풍속 시속 36㎞(초속 10ｍ)의 강한 바람이 부는 곳이 많을 전망이다.
+
+                        제주도 모든 해상과 서해 남부 먼바다, 남해 서부 먼바다에는 물결이 2∼5ｍ로 매우 높게 일 것으로 보인다.
+
+                        6일 오전 현충일 행사에 날씨가 악영향을 미치지는 않을 것으로 전망된다.
+
+                        기상청은 "6일 오전에는 우리나라에 아직 비가 오지 않아 추념 행사에 지장이 없겠지만, 바람이 다소 불 것으로 보인다"고 전했다.
+                    </p>
+                </article>
+                
+                 <article>
+                    <h1 class="title">스타워즈</h1>
+                    <span class="date">2019.06.03 04:55</span>
+                    <img class="img" src="../BBP8ACF.jpg">
+                    <p>
+                        기상청은 "남부지방을 지날 것으로 예상되는 저기압의 경로가 좀 더 북쪽으로 지날 경우 중부지방의 강수량이 늘어날 가능성이 있다"고 설명했다.
+
+                        비가 오는 동안 강풍 특보가 발표되는 곳이 많을 것으로 예상된다.
+
+                        특히 6일 밤부터 7일 아침 사이에는 저기압이 몰고 온 온난다습한 공기가 강한 남풍을 따라 유입되면서 국지적으로 돌풍과 천둥·번개를 동반한 시간당 30㎜ 안팎의 강한 비가 내릴 것으로 보인다.
+                    </p>
+                    <p>
+                        제주도와 남부지방을 중심으로 최대 풍속은 시속 36∼58㎞(초속 10∼16ｍ), 최대 순간 풍속은 시속 72㎞(초속 20ｍ)에 달할 것으로 기상청은 예상했다.
+
+                        그 밖의 전국에도 최대 풍속 시속 36㎞(초속 10ｍ)의 강한 바람이 부는 곳이 많을 전망이다.
+
+                        제주도 모든 해상과 서해 남부 먼바다, 남해 서부 먼바다에는 물결이 2∼5ｍ로 매우 높게 일 것으로 보인다.
+
+                        6일 오전 현충일 행사에 날씨가 악영향을 미치지는 않을 것으로 전망된다.
+
+                        기상청은 "6일 오전에는 우리나라에 아직 비가 오지 않아 추념 행사에 지장이 없겠지만, 바람이 다소 불 것으로 보인다"고 전했다.
+                    </p>
+                </article>
+            </div>
+            <div id="aside">
+                <h4>광고1</h4>
+                <ul>
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                    <li>link4</li>
+                    <li>link5</li>
+                </ul>
+                <h4>광고1</h4>
+                <ul>
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                    <li>link4</li>
+                    <li>link5</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">Created By Team-HeXagon</div>
+    </div>
+</body></html>
