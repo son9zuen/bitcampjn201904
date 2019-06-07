@@ -85,7 +85,7 @@
         #main {
             background: linear-gradient(#FEFEFE, #D3D8E8) fixed;
             width: 1200px;
-            height: 600px;
+            height: 650px;
         }
 
         #left>h3 {
@@ -125,7 +125,7 @@
         #signin input {
             margin-top: 10px;
             margin-right: 10px;
-            height: 30px;
+            height: 40px;
             border: 1px solid #BDC7D8;
             border-radius: 5px;
             line-height: 28px;
@@ -137,22 +137,48 @@
 
         #newPw {
             width: 350px;
+            margin-bottom: -25px;
         }
 
         #signin h5 {
-            padding-top: 30px;
+            padding-top: 35px;
             color: #AAA;
             font-size: 16px;
         }
 
         #userBday {    /*수정*/
-            
+            margin-top: -10px;
         }
         
+        #bYear{
+            width: 63px;
+            height: 30px;
+            border: 1px solid #CCD0D5;
+            text-align: center;
+        }
+        
+        #bMonth{
+            width: 63px;
+            height: 30px;
+            margin-left: -6px;
+            margin-right: -5px;
+            border: 1px solid #CCD0D5;
+            text-align: center;
+        }
+        
+        #bDay{
+            width: 48px;
+            height: 30px;
+            border: 1px solid #CCD0D5;
+            text-align: center;
+        }
         #sex{
-            margin-top: -15px; 
             font-size: 18px;
             line-height: 3px;
+        }
+        
+        #sex>input[type=radio]{
+            
         }
         /*
         #woman{
@@ -162,7 +188,7 @@
             width: 318px;
             font-size: 11px;
             color: #7E7E7E;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
     
         #signbtn{
@@ -180,7 +206,7 @@
         }
         
         #pagemake{
-            margin-top: 35px;
+            margin-top: 30px;
             color: #666666;
             font-size: 14px;
             font-weight: bolder;
@@ -191,6 +217,7 @@
             font-size: 14px;
             text-align: center;
             margin-left: 80px;
+            margin-top: 20px;
             font-size: 12px;
         }
 
@@ -267,7 +294,7 @@
                     <table id="userBday">
                         <tr>
                             <td>
-                                <select id="bYear " name="bYear">
+                                <select id="bYear" name="bYear">
                                     <option value="1995">1995</option>
                                 </select>
                                 <select id="bMonth" name="bMonth">
@@ -282,7 +309,7 @@
 
                     <div id="sex">
                         <h5>성별</h5>
-                        <input type="radio" id="woman" name="g"> 여성 <input type="radio" id="man" name="g"> 남성 <input type="radio" id="self" name="g"> 직접지정
+                        <input type="radio" id="w" name="g"> <label for="w">여성</label> <input type="radio" id="m" name="g"> <label for="m">남성</label> <input type="radio" id="s" name="g"> <label for="s">직접 지정</label>
                     </div>
                     
                     <br>
