@@ -8,22 +8,27 @@
             margin: 0;
             padding: 0;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: #3b5998;
         }
-        li{
+        
+        a:hover {
+            text-decoration: underline;
+            color: #3b5998;
+        }
+
+        li {
             list-style: none;
             float: left;
             padding: 2px 5px;
         }
 
-        #main_wrap {
-            width: 100%;
-
-        }
+        #contain {}
 
         header {
+            width: 1200px;
             height: 85px;
             background-color: #3b5998;
         }
@@ -38,13 +43,13 @@
 
         #login {
             margin-top: 15px;
-            margin-right: 100px;
+            margin-right: 160px;
             float: right;
             color: azure;
             font-size: 12px;
         }
-        
-        #login a{
+
+        #login a {
             color: #9CB4D4;
         }
 
@@ -54,7 +59,7 @@
             margin-right: 10px;
             border: 1px solid black;
         }
-        
+
         #login input[type=password] {
             width: 150px;
             height: 23px;
@@ -71,50 +76,141 @@
             font-weight: 600;
             color: white;
         }
-        
+
 
         #login>table>a {
             text-decoration: none;
         }
-        
-        #main{
+
+        #main {
             background: linear-gradient(#FEFEFE, #D3D8E8) fixed;
-            width: 100%;
-            height: 500px;
+            width: 1200px;
+            height: 600px;
         }
-        #photo{
-            margin-top:30px;
+
+        #left>h3 {
             margin-left: 50px;
-            height: 350px;
+            color: #0E385F;
+            font-weight: bolder;
+            font-size: 19px;
+
+        }
+
+        #left {
+            margin-top: 50px;
+            margin-left: 80px;
+            margin-right: 50px;
+            width: 500px;
             float: left;
         }
-        
-        #main>h3{
-            margin-top:30px;
-            margin-left: 50px;
+
+        #signin {
+            float: right;
+            margin-right: 50px;
+            width: 500px;
+            overflow: hidden;
         }
-        #main img{
-            margin-top:30px;
-            margin-left: 50px;
+
+        #signin h1 {
+            margin-top: 20px;
+            font-size: 36px;
+        }
+
+        #signin h4 {
+            line-height: 50px;
+            font-weight: 300;
+            font-size: 18px;
+        }
+
+        #signin input {
+            margin-top: 10px;
+            margin-right: 10px;
+            height: 30px;
+            border: 1px solid #BDC7D8;
+            border-radius: 5px;
+            line-height: 28px;
+        }
+
+        #userEmail {
+            width: 350px;
+        }
+
+        #newPw {
+            width: 350px;
+        }
+
+        #signin h5 {
+            padding-top: 30px;
+            color: #AAA;
+            font-size: 16px;
+        }
+
+        #userBday {    /*수정*/
             
         }
         
-        footer{
+        #sex{
+            margin-top: -15px; 
+            font-size: 18px;
+            line-height: 3px;
+        }
+        /*
+        #woman{
+            margin-top:5px;
+        }*/
+        #agree {
+            width: 318px;
+            font-size: 11px;
+            color: #7E7E7E;
+            margin-bottom: 15px;
+        }
+    
+        #signbtn{
+            margin-top: 0px;
+            width: 200px;
+            height: 80px;    /*수정*/
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #5E984B;
+            color: white;
+            font-size: 20px;
+            font-weight: 900px;
+            text-align: center;
+            line-height: 80px;
+        }
+        
+        #pagemake{
+            margin-top: 35px;
+            color: #666666;
             font-size: 14px;
+            font-weight: bolder;
         }
-        #service{
+        
+        footer {
+            width: 1200px;
+            font-size: 14px;
+            text-align: center;
+            margin-left: 80px;
+            font-size: 12px;
+        }
+
+        #service {
             border-top: 1px solid #ddd;
+            font-size: 12px;
         }
-        footer>h6{
+
+        footer>h6 {
             font-weight: 400;
+            text-align: center;
+            float: left;
         }
-        
-        
+
+
     </style>
 </head>
 
 <body>
-    <div id="main_wrap">
+    <div id="contain">
         <header>
             <div id="logo">
                 <h1>facebook</h1>
@@ -145,11 +241,11 @@
 
         </header>
         <div id="main">
-          <div id="photo">
-           <h3>Facebook에서 전세계에 있는 친구, 가족, 지인들과<br>함께 이야기를 나눠보세요.</h3>
-            <div id="img">
-                <img src="../facebook.png">
-            </div>
+            <div id="left">
+                <h3>Facebook에서 전세계에 있는 친구, 가족, 지인들과<br>함께 이야기를 나눠보세요.</h3>
+                <div id="img">
+                    <img src="../facebook.png">
+                </div>
             </div>
             <div id="signin">
                 <form>
@@ -167,25 +263,36 @@
                             <td colspan="2"><input type="password" id="newPw" name="newPw"></td>
                         </tr>
                     </table>
-                    <h4>생일</h4><br>
+                    <h5>생일</h5><br>
                     <table id="userBday">
                         <tr>
                             <td>
-                                <input type="" id="bday" name="bday">
-                            </td>
-                            <td>
-                                <a href="#">왜 생년월일을 입력해야하나<br>
-                                    요?</a>
+                                <select id="bYear " name="bYear">
+                                    <option value="1995">1995</option>
+                                </select>
+                                <select id="bMonth" name="bMonth">
+                                    <option value="11">11월</option>
+                                </select>
+                                <select id="bDay" name="bDay">
+                                    <option value="4">4</option>
+                                </select>
                             </td>
                         </tr>
                     </table>
-                    <input type="radio"> 여성 <input type="radio"> 남성<br>
-                    <p>
+
+                    <div id="sex">
+                        <h5>성별</h5>
+                        <input type="radio" id="woman" name="g"> 여성 <input type="radio" id="man" name="g"> 남성 <input type="radio" id="self" name="g"> 직접지정
+                    </div>
+                    
+                    <br>
+                    
+                    <p id=agree>
                         가입하기 버튼을 클릭하면 Facebook의 <a href="#">약관</a>, <a href="#">데이터 정책</a> 및 <a href="#">쿠키 정책</a>에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.
                     </p>
-                    <input type="submit" value="가입하기">
+                    <input type="submit" id="signbtn" value="가입하기">
 
-                    <h4>유명인, 밴드, 비즈니스를 위한 <a href="#">페이지 만들기</a></h4>
+                    <h6 id="pagemake">유명인, 밴드, 비즈니스를 위한 <a href="#">페이지 만들기</a></h6>
 
                 </form>
             </div>
@@ -238,11 +345,9 @@
                 <li><a href="#">로그인 도움말</a></li>
                 <li><a href="#">고객 센터</a></li>
             </ul>
-            <br>
-            <br>
-            
+
             <h6>Facebook © 2019</h6>
-            
+
         </footer>
     </div>
 </body>
